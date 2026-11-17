@@ -1,0 +1,42 @@
+{
+  "task": "seg",
+  "backbone": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+  "image_size": 512,
+  "args": {
+    "task": "seg",
+    "unfreeze": "12",
+    "backbone_lr": "3e-06",
+    "head_lr": "0.0002",
+    "epochs": "10",
+    "batch_size": "8",
+    "num_workers": "6",
+    "max_steps": "None",
+    "max_val_batches": "None",
+    "seed": "0",
+    "skip_test": "False",
+    "run_dir": "/proj/uppmax2026-1-299/jimcai/runs/seg_unf12_lr3e-6"
+  },
+  "best_epoch": 6,
+  "train_time_min": 55.2,
+  "peak_gpu_mem_gb": 8.03,
+  "results": {
+    "val": {
+      "mIoU": 0.9027044372374873,
+      "pixel_acc": 0.9906011647775737,
+      "IoU_Lunar Regolith": 0.9889885517351455,
+      "IoU_Impact Crater": 0.8543191450339748,
+      "IoU_Rock": 0.7453279997923979,
+      "IoU_Mountain": 0.9276275847528389,
+      "IoU_Sky": 0.9972589048730789
+    },
+    "test": {
+      "mIoU": 0.8456148623586914,
+      "pixel_acc": 0.9838412701454657,
+      "IoU_Lunar Regolith": 0.9816025192243111,
+      "IoU_Impact Crater": 0.6017085105736911,
+      "IoU_Rock": 0.7733459263640018,
+      "IoU_Mountain": 0.8758809041031873,
+      "IoU_Sky": 0.9955364515282655
+    }
+  }
+}

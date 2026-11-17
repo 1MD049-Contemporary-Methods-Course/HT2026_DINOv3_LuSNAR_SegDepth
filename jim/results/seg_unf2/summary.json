@@ -1,0 +1,41 @@
+{
+  "task": "seg",
+  "backbone": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+  "image_size": 512,
+  "args": {
+    "task": "seg",
+    "unfreeze": "2",
+    "backbone_lr": "1e-05",
+    "head_lr": "0.0002",
+    "epochs": "10",
+    "batch_size": "8",
+    "num_workers": "6",
+    "max_steps": "None",
+    "max_val_batches": "None",
+    "skip_test": "False",
+    "run_dir": "/proj/uppmax2026-1-299/jimcai/runs/seg_unf2"
+  },
+  "best_epoch": 9,
+  "train_time_min": 38.2,
+  "peak_gpu_mem_gb": 4.12,
+  "results": {
+    "val": {
+      "mIoU": 0.8940019501053627,
+      "pixel_acc": 0.9892904957870834,
+      "IoU_Lunar Regolith": 0.9883105854211743,
+      "IoU_Impact Crater": 0.8496296473890643,
+      "IoU_Rock": 0.7393807186756007,
+      "IoU_Mountain": 0.8990233438791955,
+      "IoU_Sky": 0.993665455161779
+    },
+    "test": {
+      "mIoU": 0.8429217723875404,
+      "pixel_acc": 0.9832047366722183,
+      "IoU_Lunar Regolith": 0.980841709958916,
+      "IoU_Impact Crater": 0.5961407625413018,
+      "IoU_Rock": 0.7672385124687615,
+      "IoU_Mountain": 0.8768666050020761,
+      "IoU_Sky": 0.9935212719666459
+    }
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "task": "depth",
+  "backbone": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+  "image_size": 512,
+  "args": {
+    "task": "depth",
+    "unfreeze": "12",
+    "backbone_lr": "1e-05",
+    "head_lr": "0.0002",
+    "epochs": "10",
+    "batch_size": "8",
+    "num_workers": "6",
+    "max_steps": "None",
+    "max_val_batches": "None",
+    "skip_test": "False",
+    "run_dir": "/proj/uppmax2026-1-299/jimcai/runs/depth_unf12"
+  },
+  "best_epoch": 4,
+  "train_time_min": 39.4,
+  "peak_gpu_mem_gb": 8.79,
+  "results": {
+    "val": {
+      "AbsRel": 0.0537269710556919,
+      "SqRel": 1.5750705343453995,
+      "RMSE": 22.58782838910355,
+      "RMSE_log": 0.11202475633182674,
+      "SILog": 10.989442803081452,
+      "d1": 0.9484938139566045,
+      "d2": 0.986041012293846,
+      "d3": 0.9960891692661339
+    },
+    "test": {
+      "AbsRel": 0.13103157022778694,
+      "SqRel": 5.5040192976751205,
+      "RMSE": 41.111072504344314,
+      "RMSE_log": 0.2147970633928877,
+      "SILog": 17.823200542092287,
+      "d1": 0.7941789156725007,
+      "d2": 0.9604596647110767,
+      "d3": 0.9800922334427786
+    }
+  }
+}
