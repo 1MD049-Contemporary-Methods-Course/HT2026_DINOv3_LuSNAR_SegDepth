@@ -1,0 +1,16 @@
+# Install PyTorch using the UPPMAX/environment-specific instructions.
+torch
+
+# Dataset loading and preprocessing
+numpy<2
+pandas
+Pillow
+
+# DINOv3 model and notebook utilities
+transformers
+regex>=2025.10.22
+tqdm
+matplotlib
+jupyter
+nbconvert
+ipykernel

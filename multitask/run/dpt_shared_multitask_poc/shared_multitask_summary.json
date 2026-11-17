@@ -1,0 +1,23 @@
+{
+  "backbone": "facebook/dinov3-vitb16-pretrain-lvd1689m",
+  "pretrained": true,
+  "out_layers": [
+    2,
+    5,
+    8,
+    11
+  ],
+  "unfreeze_last_n": 0,
+  "results": {
+    "val": {
+      "mIoU": 0.8836105525021363,
+      "AbsRel": 0.40893828767392476,
+      "RMSE": 20.32006424961048
+    },
+    "test": {
+      "mIoU": 0.8358273265465319,
+      "AbsRel": 0.3301453581857581,
+      "RMSE": 45.237591316802764
+    }
+  }
+}
