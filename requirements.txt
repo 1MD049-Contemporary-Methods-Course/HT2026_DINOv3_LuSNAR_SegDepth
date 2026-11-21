@@ -1,0 +1,18 @@
+# PyTorch: install the build that matches your CUDA version (see pytorch.org / UPPMAX docs)
+torch
+
+# Data loading and preprocessing
+numpy<2
+pandas
+Pillow
+
+# DINOv3 backbone (DINOv3ViTModel needs transformers >= 4.56)
+transformers>=4.56
+regex>=2025.10.22
+
+# Training, plotting and notebooks
+tqdm
+matplotlib
+jupyter
+ipykernel
+nbconvert
